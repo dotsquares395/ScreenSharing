@@ -1,0 +1,6 @@
+framework module Pods_ScreenSharing_ScreenSharingTests {
+  umbrella header "Pods-ScreenSharing-ScreenSharingTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

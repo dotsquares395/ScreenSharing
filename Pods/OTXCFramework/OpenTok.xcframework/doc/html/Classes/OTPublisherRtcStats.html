@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>OTPublisherRtcStats Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">OpenTok iOS SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">TokBox, Inc</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/connectionId">connectionId</option>
+		
+		<option value="//api/name/jsonArrayOfReports">jsonArrayOfReports</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">OTPublisherRtcStats Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>OTPublisherKit.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Represents RTC statistics for a media stream published by the publisher.</p>
+
+<p>See <a href="../Classes/OTPublisherKit.html#//api/name/getRtcStatsReport">[OTPublisherKit getRtcStatsReport]</a>.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/connectionId" title="connectionId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connectionId">&nbsp;&nbsp;connectionId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>For a relayed session (in which a publisher sends individual media streams
+to each subscriber), this is the unique ID of the client&rsquo;s connection.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong) NSString *connectionId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OTPublisherKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/jsonArrayOfReports" title="jsonArrayOfReports"></a>
+	<h3 class="method-title"><code><a href="#//api/name/jsonArrayOfReports">&nbsp;&nbsp;jsonArrayOfReports</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  A JSON array of RTC stats reports for the media stream.
+  The structure of the JSON array is similar to the format of
+  the RtcStatsReport object implemented in web browsers (see
+  <a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCStatsReport">Mozilla
+  docs</a>). Also see <a href="https://w3c.github.io/webrtc-stats/#summary">this
+  W3C documentation</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong) NSString *jsonArrayOfReports</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  Here is a partial sample:</p>
+
+<p>  <pre>
+   [
+      {
+          &ldquo;audioLevel&rdquo;: 0,
+          &ldquo;id&rdquo;: &ldquo;RTCAudioSource_1&rdquo;,
+          &ldquo;kind&rdquo;: &ldquo;audio&rdquo;,
+          &ldquo;timestamp&rdquo;: 1603448671532842,
+          &ldquo;totalAudioEnergy&rdquo;: 0,
+          &ldquo;totalSamplesDuration&rdquo;: 4.249999999999954,
+          &ldquo;trackIdentifier&rdquo;: &ldquo;4nP5yeIDzbUm6IJho5jkTps1lnfabsFvTXjH00&rdquo;,
+          &ldquo;type&rdquo;: &ldquo;media-source&rdquo;
+      },
+      {
+          &ldquo;base64Certificate&rdquo;: &ldquo;MIIBFjCB&hellip;QIhAMIfr/NgvhNp16zaoHxGQGrID1STFmBSSSB4V1bxBrTU&rdquo;,
+          &ldquo;fingerprint&rdquo;: &ldquo;E7:5F:&hellip;:FA:5A:1F:A7:E0:55:60&rdquo;,
+          &ldquo;fingerprintAlgorithm&rdquo;: &ldquo;sha-256&rdquo;,
+          &ldquo;id&rdquo;: &ldquo;RTCCertificate_E7:5F:E5&hellip;F:1D:FA:5A:1F:A7:E0:55:60&rdquo;,
+          &ldquo;timestamp&rdquo;: 1603448671532842,
+          &ldquo;type&rdquo;: &ldquo;certificate&rdquo;
+      },
+      {
+          &ldquo;channels&rdquo;: 1,
+          &ldquo;clockRate&rdquo;: 8000,
+          &ldquo;id&rdquo;: &ldquo;RTCCodec_audio_Inbound_0&rdquo;,
+          &ldquo;mimeType&rdquo;: &ldquo;audio/PCMU&rdquo;,
+          &ldquo;payloadType&rdquo;: 0,
+          &ldquo;timestamp&rdquo;: 1603448671532842,
+          &ldquo;type&rdquo;: &ldquo;codec&rdquo;
+      },
+      {
+          &ldquo;channels&rdquo;: 2,
+          &ldquo;clockRate&rdquo;: 48000,
+          &ldquo;id&rdquo;: &ldquo;RTCCodec_audio_Inbound_111&rdquo;,
+          &ldquo;mimeType&rdquo;: &ldquo;audio/opus&rdquo;,
+          &ldquo;payloadType&rdquo;: 111,
+          &ldquo;sdpFmtpLine&rdquo;: &ldquo;minptime=10;useinbandfec=1&rdquo;,
+          &ldquo;timestamp&rdquo;: 1603448671532842,
+          &ldquo;type&rdquo;: &ldquo;codec&rdquo;
+      },
+   ]
+   </pre></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OTPublisherKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2024 TokBox, Inc. All rights reserved. Updated: 2024-04-22</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

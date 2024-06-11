@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>OTVideoTransformer Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">OpenTok iOS SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">TokBox, Inc</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/initWithName:properties:">- initWithName:properties:</option>
+		
+		<option value="//api/name/initWithName:transformer:">- initWithName:transformer:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">OTVideoTransformer Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>OTPublisherKit.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Defines a transformer of a video stream.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithName:properties:" title="initWithName:properties:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithName:properties:">&ndash;&nbsp;initWithName:properties:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an instance of a Vonage video transformer. For more information,
+see <a href="https://tokbox.com/developer/guides/vonage-media-processor/ios/">Using
+the Vonage Media Processor library</a>. <b>Note:</b> Media transformers
+are not supported on all devices or iOS versions — see
+<a href="https://tokbox.com/developer/guides/vonage-media-processor/ios/#supported-devices-and-ios-versions">this documentation</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable id)initWithName:(nonnull NSString *)<em>name</em> properties:(nonnull NSString *)<em>properties</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The name of the Vonage transformer. Currently,
+&ldquo;BackgroundBlur&rdquo; and &ldquo;BackgroundReplacement&rdquo; are supported.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>properties</code></th>
+						<td><p>A JSON string with the properties of the Vonage video transformer.
+For a background blur transformer, the format of the JSON is
+&ldquo;{\"radius\&rdquo;:\&ldquo;None\&rdquo;}&ldquo;. Valid values for the <code>radius</code> property
+a None&rdquo;, &ldquo;High&rdquo;, and &ldquo;Low&rdquo;.
+For a custom background blur transformer, the format of the JSON is
+&ldquo;{\"radius\&rdquo;:\&ldquo;Custom\&rdquo;,\&ldquo;custom_radius\&rdquo;:\&ldquo;value\&rdquo;}&ldquo;, where <code>custom_radius</code> can
+be any positive integer.
+For a background replacement transformer, the format of the JSON is
+&rdquo;{\&ldquo;image_file_path\&rdquo;:\&ldquo;path/to/image\&rdquo;}&ldquo;, where <code>image_file_path</code> is the
+absolute file path of a local image to use as virtual background.  Supported image formats
+are PNG and JPEG.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OTPublisherKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithName:transformer:" title="initWithName:transformer:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithName:transformer:">&ndash;&nbsp;initWithName:transformer:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an instance of a custom video transformer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable id)initWithName:(nonnull NSString *)<em>name</em> transformer:(nonnull id&lt;OTCustomVideoTransformer&gt;)<em>transformer</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The identifier for the transformer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>transformer</code></th>
+						<td><p>The transformer.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NULL if an error occurs.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OTPublisherKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2024 TokBox, Inc. All rights reserved. Updated: 2024-04-22</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

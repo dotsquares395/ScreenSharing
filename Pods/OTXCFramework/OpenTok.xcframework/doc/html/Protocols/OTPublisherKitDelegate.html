@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>OTPublisherKitDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">OpenTok iOS SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">TokBox, Inc</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/muteForced:">- muteForced:</option>
+		
+		<option value="//api/name/publisher:didFailWithError:">- publisher:didFailWithError:</option>
+		
+		<option value="//api/name/publisher:streamCreated:">- publisher:streamCreated:</option>
+		
+		<option value="//api/name/publisher:streamDestroyed:">- publisher:streamDestroyed:</option>
+		
+		<option value="//api/name/publisherVideoDisableWarning:">- publisherVideoDisableWarning:</option>
+		
+		<option value="//api/name/publisherVideoDisableWarningLifted:">- publisherVideoDisableWarningLifted:</option>
+		
+		<option value="//api/name/publisherVideoDisabled:reason:">- publisherVideoDisabled:reason:</option>
+		
+		<option value="//api/name/publisherVideoEnabled:reason:">- publisherVideoEnabled:reason:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">OTPublisherKitDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>OTPublisherKit.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Used for sending messages for an OTPublisher instance. The OTPublisher class
+includes a <code>delegate</code> property. When you send the
+<a href="../Classes/OTPublisherKit.html#//api/name/initWithDelegate:">[OTPublisherKit initWithDelegate:]</a> message or the
+<a href="../Classes/OTPublisherKit.html#//api/name/initWithDelegate:settings:">[OTPublisherKit initWithDelegate:settings:]</a> message, you specify an
+OTPublisherKitDelegate object.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/publisher:didFailWithError:" title="publisher:didFailWithError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publisher:didFailWithError:">&ndash;&nbsp;publisher:didFailWithError:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sent if the publisher encounters an error. After this message is sent,
+the publisher can be considered fully detached from a session and may
+be released.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)publisher:(nonnull OTPublisherKit *)<em>publisher</em> didFailWithError:(nonnull OTError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publisher</code></th>
+						<td><p>The publisher that signalled this event.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>The error (an <a href="../Classes/OTError.html">OTError</a> object). The <code>OTPublisherErrorCode</code>
+enum (defined in the OTError class)
+defines values for the <code>code</code> property of this object.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OTPublisherKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/muteForced:" title="muteForced:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/muteForced:">&ndash;&nbsp;muteForced:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sent when a moderator has forced this publisher to mute audio.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)muteForced:(nonnull OTPublisherKit *)<em>publisher</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publisher</code></th>
+						<td><p>The publisher.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>See <a href="../Classes/OTSession.html#//api/name/forceMuteAll:error:">[OTSession forceMuteAll:error:]</a> and
+<a href="../Classes/OTSession.html#//api/name/forceMuteStream:error:">[OTSession forceMuteStream:error:]</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OTPublisherKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publisher:streamCreated:" title="publisher:streamCreated:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publisher:streamCreated:">&ndash;&nbsp;publisher:streamCreated:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sent when the publisher starts streaming.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)publisher:(nonnull OTPublisherKit *)<em>publisher</em> streamCreated:(nonnull OTStream *)<em>stream</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publisher</code></th>
+						<td><p>The publisher of the stream.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>stream</code></th>
+						<td><p>The stream that was created.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OTPublisherKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publisher:streamDestroyed:" title="publisher:streamDestroyed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publisher:streamDestroyed:">&ndash;&nbsp;publisher:streamDestroyed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sent when the publisher stops streaming.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)publisher:(nonnull OTPublisherKit *)<em>publisher</em> streamDestroyed:(nonnull OTStream *)<em>stream</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publisher</code></th>
+						<td><p>The publisher that stopped sending this stream.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>stream</code></th>
+						<td><p>The stream that ended.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OTPublisherKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publisherVideoDisabled:reason:" title="publisherVideoDisabled:reason:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publisherVideoDisabled:reason:">&ndash;&nbsp;publisherVideoDisabled:reason:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This message is sent when the publisher stops sending video.
+Check the reason parameter for the reason why the video stopped.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)publisherVideoDisabled:(nonnull OTPublisherKit *)<em>publisher</em> reason:(OTPublisherVideoEventReason)<em>reason</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publisher</code></th>
+						<td><p>The <a href="../Classes/OTPublisher.html">OTPublisher</a> that will no longer send video.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reason</code></th>
+						<td><p>The reason that the video track was disabled. See
+<a href="../Constants/OTPublisherVideoEventReason.html">OTPublisherVideoEventReason</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OTPublisherKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publisherVideoEnabled:reason:" title="publisherVideoEnabled:reason:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publisherVideoEnabled:reason:">&ndash;&nbsp;publisherVideoEnabled:reason:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This message is sent when the publisher&rsquo;s video stream resumes (after
+video was disabled). Check the reason parameter for the reason
+why the video resumed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)publisherVideoEnabled:(nonnull OTPublisherKit *)<em>publisher</em> reason:(OTPublisherVideoEventReason)<em>reason</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publisher</code></th>
+						<td><p>The <a href="../Classes/OTPublisher.html">OTPublisher</a> that will send video.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reason</code></th>
+						<td><p>The reason that the video track was enabled. See
+<a href="../Constants/OTPublisherVideoEventReason.html">OTPublisherVideoEventReason</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OTPublisherKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publisherVideoDisableWarning:" title="publisherVideoDisableWarning:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publisherVideoDisableWarning:">&ndash;&nbsp;publisherVideoDisableWarning:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This message is sent when the publisher determines that the stream
+quality has degraded and the video will be disabled if the quality degrades
+further. If the quality degrades further, the publisher disables the video
+and the <a href="#//api/name/publisherVideoDisabled:reason:">[OTPublisherKitDelegate publisherVideoDisabled:reason:]</a> message
+is sent. If the network congestion level improves, the
+<a href="#//api/name/publisherVideoDisableWarningLifted:">[OTPublisherKitDelegate publisherVideoDisableWarningLifted:]</a> message is
+sent.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)publisherVideoDisableWarning:(nonnull OTPublisherKit *)<em>publisher</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publisher</code></th>
+						<td><p>The <a href="../Classes/OTPublisher.html">OTPublisher</a> that may stop sending video soon.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This message is mainly sent when connection quality degrades.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OTPublisherKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publisherVideoDisableWarningLifted:" title="publisherVideoDisableWarningLifted:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publisherVideoDisableWarningLifted:">&ndash;&nbsp;publisherVideoDisableWarningLifted:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This message is sent when the publisher determines that the network
+congestion level has improved to the point at which the video being disabled
+is not an immediate risk. This message is sent after the
+<a href="#//api/name/publisherVideoDisableWarning:">[OTPublisherKitDelegate publisherVideoDisableWarning:]</a> message is
+sent.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)publisherVideoDisableWarningLifted:(nonnull OTPublisherKit *)<em>publisher</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publisher</code></th>
+						<td><p>The <a href="../Classes/OTPublisher.html">OTPublisher</a> instance.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This message is mainly sent when connection quality improves.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">OTPublisherKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2024 TokBox, Inc. All rights reserved. Updated: 2024-04-22</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
