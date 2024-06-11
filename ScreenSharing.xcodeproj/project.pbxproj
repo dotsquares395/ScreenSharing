@@ -15,7 +15,6 @@
 		84E67ADC2C11CFC100C08EF4 /* Pods_ScreenSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1FD14036C2849B29FDEEDFD /* Pods_ScreenSharing.framework */; };
 		84E67ADD2C11CFC100C08EF4 /* Pods_ScreenSharing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1FD14036C2849B29FDEEDFD /* Pods_ScreenSharing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84E67AE22C11E3D900C08EF4 /* ScreenCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E67AE12C11E3D900C08EF4 /* ScreenCapturer.swift */; };
-		CD2C5203C572BB1E4229135F /* Pods_ScreenSharing_ScreenSharingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B2F7B7186F41050F60225F /* Pods_ScreenSharing_ScreenSharingTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +43,6 @@
 
 /* Begin PBXFileReference section */
 		052E86BF34A91A7348302E31 /* Pods-ScreenSharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenSharing.release.xcconfig"; path = "Target Support Files/Pods-ScreenSharing/Pods-ScreenSharing.release.xcconfig"; sourceTree = "<group>"; };
-		31B2F7B7186F41050F60225F /* Pods_ScreenSharing_ScreenSharingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenSharing_ScreenSharingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		73611DD8DAC6356E13FBCC34 /* Pods-ScreenSharing-ScreenSharingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenSharing-ScreenSharingTests.release.xcconfig"; path = "Target Support Files/Pods-ScreenSharing-ScreenSharingTests/Pods-ScreenSharing-ScreenSharingTests.release.xcconfig"; sourceTree = "<group>"; };
-		7E80704F60FA263390E33CF1 /* Pods-ScreenSharing-ScreenSharingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenSharing-ScreenSharingTests.debug.xcconfig"; path = "Target Support Files/Pods-ScreenSharing-ScreenSharingTests/Pods-ScreenSharing-ScreenSharingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		84E3577F2C12EAD20096332E /* OpenTokManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenTokManager.swift; sourceTree = "<group>"; };
 		84E67A882C11C51500C08EF4 /* ScreenSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScreenSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E67A8B2C11C51500C08EF4 /* ScreenSharing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenSharing.h; sourceTree = "<group>"; };
@@ -72,7 +68,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E67A932C11C51500C08EF4 /* ScreenSharing.framework in Frameworks */,
-				CD2C5203C572BB1E4229135F /* Pods_ScreenSharing_ScreenSharingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				C1FD14036C2849B29FDEEDFD /* Pods_ScreenSharing.framework */,
-				31B2F7B7186F41050F60225F /* Pods_ScreenSharing_ScreenSharingTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,8 +126,6 @@
 			children = (
 				CCEC05D361D22786BFB1A9F2 /* Pods-ScreenSharing.debug.xcconfig */,
 				052E86BF34A91A7348302E31 /* Pods-ScreenSharing.release.xcconfig */,
-				7E80704F60FA263390E33CF1 /* Pods-ScreenSharing-ScreenSharingTests.debug.xcconfig */,
-				73611DD8DAC6356E13FBCC34 /* Pods-ScreenSharing-ScreenSharingTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -177,11 +169,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84E67A9F2C11C51500C08EF4 /* Build configuration list for PBXNativeTarget "ScreenSharingTests" */;
 			buildPhases = (
-				4C03658DD2B429AA7AE60138 /* [CP] Check Pods Manifest.lock */,
 				84E67A8E2C11C51500C08EF4 /* Sources */,
 				84E67A8F2C11C51500C08EF4 /* Frameworks */,
 				84E67A902C11C51500C08EF4 /* Resources */,
-				BD07CC9C24CA28E5D0B21C3E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,28 +238,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4C03658DD2B429AA7AE60138 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ScreenSharing-ScreenSharingTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		75AB200F7558B14337BFF11D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -307,23 +275,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScreenSharing/Pods-ScreenSharing-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BD07CC9C24CA28E5D0B21C3E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ScreenSharing-ScreenSharingTests/Pods-ScreenSharing-ScreenSharingTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ScreenSharing-ScreenSharingTests/Pods-ScreenSharing-ScreenSharingTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScreenSharing-ScreenSharingTests/Pods-ScreenSharing-ScreenSharingTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -565,7 +516,6 @@
 		};
 		84E67AA02C11C51500C08EF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E80704F60FA263390E33CF1 /* Pods-ScreenSharing-ScreenSharingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -587,7 +537,6 @@
 		};
 		84E67AA12C11C51500C08EF4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73611DD8DAC6356E13FBCC34 /* Pods-ScreenSharing-ScreenSharingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
