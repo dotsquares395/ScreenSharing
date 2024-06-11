@@ -12,5 +12,5 @@ Pod::Spec.new do |spec|
   spec.source_files =  'ScreenSharing/*.{swift}'
   spec.swift_versions = '5.0'
   spec.xcconfig     = { "ENABLE_BITCODE" => "NO" }
-  spec.dependency   = 'OpenTok'
+  spec.dependency 'OpenTok'
  end
