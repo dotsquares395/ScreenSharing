@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84DB79912C22CF50005A6E62 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 84DB798E2C22CF50005A6E62 /* LICENSE */; };
+		84DB79922C22CF50005A6E62 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 84DB798F2C22CF50005A6E62 /* README.md */; };
+		84DB79932C22CF50005A6E62 /* ScreenSharing.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 84DB79902C22CF50005A6E62 /* ScreenSharing.podspec */; };
+		84DB79962C22DB6A005A6E62 /* screenshare.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DB79942C22DB6A005A6E62 /* screenshare.png */; };
+		84DB79992C22DB8D005A6E62 /* screensharecode.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DB79982C22DB8D005A6E62 /* screensharecode.png */; };
 		84E357802C12EAD20096332E /* OpenTokManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E3577F2C12EAD20096332E /* OpenTokManager.swift */; };
 		84E67A8D2C11C51500C08EF4 /* ScreenSharing.docc in Sources */ = {isa = PBXBuildFile; fileRef = 84E67A8C2C11C51500C08EF4 /* ScreenSharing.docc */; };
 		84E67A932C11C51500C08EF4 /* ScreenSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E67A882C11C51500C08EF4 /* ScreenSharing.framework */; };
@@ -43,6 +48,11 @@
 
 /* Begin PBXFileReference section */
 		052E86BF34A91A7348302E31 /* Pods-ScreenSharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenSharing.release.xcconfig"; path = "Target Support Files/Pods-ScreenSharing/Pods-ScreenSharing.release.xcconfig"; sourceTree = "<group>"; };
+		84DB798E2C22CF50005A6E62 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		84DB798F2C22CF50005A6E62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		84DB79902C22CF50005A6E62 /* ScreenSharing.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ScreenSharing.podspec; sourceTree = "<group>"; };
+		84DB79942C22DB6A005A6E62 /* screenshare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshare.png; sourceTree = "<group>"; };
+		84DB79982C22DB8D005A6E62 /* screensharecode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screensharecode.png; sourceTree = "<group>"; };
 		84E3577F2C12EAD20096332E /* OpenTokManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenTokManager.swift; sourceTree = "<group>"; };
 		84E67A882C11C51500C08EF4 /* ScreenSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScreenSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E67A8B2C11C51500C08EF4 /* ScreenSharing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenSharing.h; sourceTree = "<group>"; };
@@ -105,6 +115,11 @@
 		84E67A8A2C11C51500C08EF4 /* ScreenSharing */ = {
 			isa = PBXGroup;
 			children = (
+				84DB79942C22DB6A005A6E62 /* screenshare.png */,
+				84DB79982C22DB8D005A6E62 /* screensharecode.png */,
+				84DB798E2C22CF50005A6E62 /* LICENSE */,
+				84DB798F2C22CF50005A6E62 /* README.md */,
+				84DB79902C22CF50005A6E62 /* ScreenSharing.podspec */,
 				84E3577F2C12EAD20096332E /* OpenTokManager.swift */,
 				84E67AE12C11E3D900C08EF4 /* ScreenCapturer.swift */,
 				84E67A8B2C11C51500C08EF4 /* ScreenSharing.h */,
@@ -225,6 +240,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DB79932C22CF50005A6E62 /* ScreenSharing.podspec in Resources */,
+				84DB79992C22DB8D005A6E62 /* screensharecode.png in Resources */,
+				84DB79922C22CF50005A6E62 /* README.md in Resources */,
+				84DB79912C22CF50005A6E62 /* LICENSE in Resources */,
+				84DB79962C22DB6A005A6E62 /* screenshare.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
