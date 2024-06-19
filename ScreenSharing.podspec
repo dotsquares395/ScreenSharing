@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   s.screenshots = 'https://ibb.co/hd6rHtJ',
                 'https://ibb.co/R31zQf5'
   s.documentation_url = 'https://yourwebsite.com/yourframework/docs'
-  s.social_media_url  = 'https://twitter.com/yourtwitter'
+
   end
                 
 end

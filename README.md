@@ -1,5 +1,5 @@
 ![ImagePicker](https://github.com/dotsquares395/ScreenSharing/blob/main/ScreenSharing//screenshare.png)
-![ImagePicker](https://github.com/dotsquares395/ScreenSharing/blob/main/ScreenSharing/screensharecode)
+![ImagePicker](https://github.com/dotsquares395/ScreenSharing/blob/main/ScreenSharing/screensharecode.png)
 
 
 ## Description
