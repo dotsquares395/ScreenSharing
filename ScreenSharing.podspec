@@ -17,5 +17,3 @@ Pod::Spec.new do |spec|
   s.documentation_url = 'https://yourwebsite.com/yourframework/docs'
 
   end
-                
-end
