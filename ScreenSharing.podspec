@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "ScreenSharing"
-  spec.version      = "1.1.0"
+  spec.version      = "1.2.0"
   spec.summary      = "ScreenSharing enabling collaborative work, presentations, and remote assistance seamlessly."
   spec.description  = "ScreenSharing allows real-time sharing of your computer screen with others, facilitating remote collaboration, presentations, and technical support."
   spec.homepage     = "https://github.com/dotsquares395/ScreenSharing"
