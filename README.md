@@ -18,7 +18,10 @@
 **ScreenSharing** "Use the connectScreenSharing function in the OpenTokManager class, providing kApiKey, sessionId, token, and appView as parameters. Verify that appView is correctly set to your screen-sharing interface."
 
 ```swift
-    OpenTokManager.connectScreenSharing(apiKey: "", sessionId: "", token: "", appView: UIView())
+    let kApiKey = ""
+    let kSessionId = ""
+    let kToken = ""
+    OpenTokManager.connectScreenSharing(apiKey:kApiKey , sessionId: kSessionId, token: kToken, appView: UIView())
 ```
 
 **ScreenSharing** please allow permission
