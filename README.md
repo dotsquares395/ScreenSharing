@@ -27,8 +27,8 @@
 **ScreenSharing** please allow permission
 
 ```swift
-  - camera 
-  - microphone
+  - Camera 
+  - Micro-phone
 ```
 
 ## Installation
@@ -42,7 +42,7 @@ pod 'ScreenSharing'
 
 
 ```ruby
-github "dotsquares395/ScreenSharing"
+GitHub "dotsquares395/ScreenSharing"
 ```
 
 ## Author
@@ -53,14 +53,14 @@ github "dotsquares395/ScreenSharing"
 ## License
 
 **ScreenSharing** is available under the MIT license. See the [LICENSE](https://github.com/dotsquares395/ScreenSharing/?tab=MIT-1-ov-file) file for more info.
-Copyright (c) 2024 Dotsquares Ltd
+Copyright (c) 2024 
 
 
 **ScreenSharing** version vs Swift version.
 
 ScreenSharing 13.0+ is Swift 5 ready! 🎉
 
-If you use earlier version of Swift - refer to the table below:
+If you use an earlier version of Swift - refer to the table below:
 
 | Swift version | ImageViewer version               |
 | ------------- | --------------------------------- |
