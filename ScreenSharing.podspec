@@ -13,6 +13,6 @@ Pod::Spec.new do |spec|
   spec.swift_versions = '5.0'
   spec.xcconfig     = { "ENABLE_BITCODE" => "NO" }
   spec.screenshots = 'https://ibb.co/hd6rHtJ','https://ibb.co/R31zQf5'
-  spec.dependency   = "OpenTok"
- 
+  spec.dependency   = 'OpenTok'
+  spec.static_framework = true
  end
